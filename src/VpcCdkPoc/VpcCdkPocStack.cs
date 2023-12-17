@@ -12,8 +12,8 @@ namespace VpcCdkPoc
     {
         internal VpcCdkPocStack(Construct scope, string id, IStackProps props = null) : base(scope, id, props)
         {
-            var repository = "Falenyoni/awscdk-cicd-pipeline";
-            var pipeline = new CodePipeline(this, "Pipeline", new CodePipelineProps
+            var repository = "Falenyoni/vpc-cdk-poc";
+            var pipeline = new CodePipeline(this, "PipelineCSHARP", new CodePipelineProps
             {
                 PipelineName = "LambdaPipeline",
                 SelfMutation = true,
